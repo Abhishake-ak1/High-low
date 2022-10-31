@@ -73,6 +73,68 @@ textcolor(RED);
      cin>>guess;
      goto B;
     }
+     if(guess<rnum)
+    {
+     cout<<“nn”<<guess<<” is Low…!!!aa”<<“nnNow You Have “<<count<<” chance left”;
+     if(count==0)
+      break;
+     cout<<“nnEnter Your Guess Again:”;
+     cin>>guess;
+     goto B;
+    }
+   }
+   if(guess==rnum)
+   {
+    cout<<“nnttCongratulation “<<a<<” You Have Done IT…….!!!!!aa”;
+    switch(count)
+    {
+     case 7: cout<<“nnYour Score is 100 out of 100”;
+      break;
+     case 6: cout<<“nnYour Score is 85 out of 100”;
+      break;
+     case 5: cout<<“nnYour Score is 70 out of 100”;
+      break;
+     case 4: cout<<“nnYour Score is 55 out of 100”;
+      break;
+     case 3: cout<<“nnYour Score is 40 out of 100”;
+      break;
+     case 2: cout<<“nnYour Score is 25 out of 100”;
+      break;
+     case 1: cout<<“nnYour Score is 10 out of 100”;
+      break;
+    }
+   }
+   else
+    cout<<“nnttSorry “<<a<<” Bad Luck……!!! Try Next Timeaaa”;
+   cout<<“nnWant to Play More(y/n):”;
+   cin>>ch;
+   if(ch==’y’||ch==’Y’)
+   {
+    c++;
+    goto A;
+   }
+   else
+    {
+     cout<<“nnnnttt    @@@@@@@@ THANK YOU @@@@@@@@   nn”;
+     cout<<“================================================================================”;
+
+     cout<<“aanntttt Special Thanks Tontttt___________________nntttt  Mrs.Rakhi Jain”;
+     cout<<“nnnntttt Game Developed Byntttt___________________nntttt  Neeraj Mishra”;
+     cout<<“nn================================================================================”;
+     delay(10000);
+     exit(0);
+    }
+  }
+   break;
+ case 3:
+  {
+   cout<<“nnn================================================================================”;
+    cout<<“nntttt Special Thanks Tontttt___________________nntttt  Mrs.Rakhi Jain”;
+    cout<<“nnnntttt Game Developed Byntttt___________________nntttt  Neeraj Mishra”;
+    cout<<“nnn================================================================================”;
+    delay(10000);
+    exit(0);
+
    
   }
  }
